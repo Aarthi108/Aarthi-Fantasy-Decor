@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aarthi's Fantasy Decor – Balloon &amp; Floral Décor in Downingtown, PA</title>
+<meta name="description" content="Aarthi's Fantasy Decor creates balloon, floral and celebration décor for birthdays, baby showers, anniversaries, festivals, corporate and community events in Downingtown, PA and within a 40-mile radius.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#FBF8F3;color:#3D2A30;font-family:'Jost',system-ui,sans-serif;font-weight:300;line-height:1.7}
+a{color:#3D2A30;text-decoration:none}a:hover{color:#A8456A}
+button{font:inherit;cursor:pointer;color:inherit}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;margin:0;line-height:1.15}
+p{margin:0}
+img{display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#A8456A;font-weight:400}
+.btn{display:inline-block;padding:14px 30px;border-radius:999px;font-size:14px;letter-spacing:.08em;border:1px solid #A8456A;background:#A8456A;color:#FBF8F3;transition:background .25s,transform .25s;text-align:center}
+.btn:hover{background:#8E3758;color:#FBF8F3;transform:translateY(-1px)}
+.btn:disabled{opacity:.6;cursor:wait;transform:none}
+.btn-ghost{background:transparent;color:#3D2A30;border-color:#F4B6BD}
+.btn-ghost:hover{background:#F9D0D4;color:#3D2A30}
+.card{background:#FFFFFF;border-radius:16px;box-shadow:0 6px 24px rgba(61,42,48,.07);overflow:hidden;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(61,42,48,.12)}
+.chip{display:inline-block;padding:7px 16px;border-radius:999px;border:1px solid #F9D0D4;font-size:13px;margin:4px;background:#FFFFFF;transition:background .2s}
+.chip:hover{background:#FBE3E1}
+.pic{display:block;width:100%;height:100%;object-fit:cover}
+.link-btn{font-size:13px;text-decoration:underline;border:none;background:none;padding:0;color:inherit}
+.link-btn.accent{color:#A8456A}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.grid5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.field{display:flex;flex-direction:column;gap:6px;font-size:14px;margin-bottom:16px}
+.field .lbl{font-weight:400;color:#3D2A30}
+.field input,.field select,.field textarea{font:inherit;font-size:14px;padding:11px 14px;border:1px solid #F4B6BD;border-radius:10px;background:#FFFCFC;color:#3D2A30;width:100%}
+.field textarea{min-height:110px;resize:vertical}
+.field fieldset,fieldset{border:none;padding:0;margin:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+.opt{display:inline-flex;align-items:center;gap:8px;margin:4px 14px 4px 0;font-size:14px}
+.req{color:#A8456A}
+.overlay{position:fixed;inset:0;background:rgba(61,42,48,.55);display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:48px 16px;z-index:50}
+.overlay[hidden]{display:none}
+.sheet{background:#FBF8F3;border-radius:20px;max-width:760px;width:100%;padding:40px 44px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.x{position:absolute;top:14px;right:18px;font-size:26px;border:none;background:none;padding:4px 10px;line-height:1}
+.err{display:none;margin-top:16px;padding:12px 16px;border-radius:10px;background:#FBE3E1;color:#8E3758;font-size:14px}
+.err.show{display:block}
+.hidden{display:none !important}
+.previews{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.previews img{width:84px;height:84px;object-fit:cover;border-radius:10px}
+.tile{padding:0;border:none;background:none;border-radius:12px;overflow:hidden;display:block;width:100%}
+.tile img{width:100%;height:100%;object-fit:cover}
+.hide-mobile-nav{}
+@media (max-width: 900px){
+  .wrap{padding:0 22px}
+  .grid3{grid-template-columns:1fr}
+  .grid5{grid-template-columns:1fr 1fr}
+  .grid4{grid-template-columns:1fr 1fr}
+  .two-col,.hero-grid,.footer-grid{grid-template-columns:1fr !important}
+  .grid2{grid-template-columns:1fr}
+  .sheet{padding:28px 22px}
+  .navlinks{gap:14px !important;flex-wrap:wrap;justify-content:center;font-size:13px !important}
+  .nav-inner{height:auto !important;padding:14px 0;flex-wrap:wrap;gap:12px}
+  h1{font-size:40px !important}
+  .hero-img{height:360px !important}
+}
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div style="background:#FBE3E1;font-size:13px;padding:8px 0;letter-spacing:.04em">
+  <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+    <span>Serving Downingtown, PA and within a 40-mile radius</span>
+    <span>
+      <a href="https://www.instagram.com/aarthisfantasydecor/" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp;
+      <a href="https://wa.me/12172500515?text=Hi%20Aarthi%2C%20I%27d%20like%20to%20enquire%20about%20decorating%20my%20event" target="_blank" rel="noopener">WhatsApp</a> &nbsp;·&nbsp;
+      +1 (217) 250-0515
+    </span>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav style="background:#FBF8F3;border-bottom:1px solid #F8E4E4;position:sticky;top:0;z-index:40">
+  <div class="wrap nav-inner" style="display:flex;align-items:center;justify-content:space-between;height:84px">
+    <a href="#home" style="display:flex;align-items:center;gap:14px">
+      <img src="images/logo.png" alt="Aarthi's Fantasy Decor logo" style="width:64px;height:64px;object-fit:contain">
+      <span>
+        <span style="display:block;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;line-height:1">Aarthi's</span>
+        <span style="display:block;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#A8456A">Fantasy Decor</span>
+      </span>
+    </a>
+    <div class="navlinks" style="display:flex;gap:24px;font-size:14px;letter-spacing:.04em">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Our Services</a><a href="#our-work">Our Work</a><a href="#packages">Packages</a><a href="#grab-go">Grab &amp; Go</a><a href="#contact">Contact Us</a>
+    </div>
+    <button class="btn" type="button" data-open-form>Book Your Event</button>
+  </div>
+</nav>
+
+<!-- Home / Hero -->
+<section id="home" style="background:linear-gradient(to right,#FDF6F5 0%,#F9D0D4 100%)">
+  <div class="wrap hero-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:84px">
+    <div>
+      <div class="eyebrow">Balloon · Floral · Celebration Décor</div>
+      <h1 style="font-size:60px;margin-top:18px">Making Every Celebration Beautiful and Unforgettable</h1>
+      <p style="font-size:17px;max-width:480px;margin-top:22px">Welcome to Aarthi's Fantasy Decor. Balloons, florals and thoughtful details, designed for birthdays, baby showers, anniversaries, festivals and every moment worth remembering.</p>
+      <div style="display:flex;gap:16px;margin-top:34px;flex-wrap:wrap">
+        <button class="btn" type="button" data-open-form>Book Your Event</button>
+        <a class="btn btn-ghost" href="#our-work">Explore Our Work</a>
+      </div>
+    </div>
+    <img class="hero-img" src="images/hero.jpg" alt="Balloon arch décor" style="width:100%;height:520px;object-fit:cover;border-radius:200px 200px 16px 16px;box-shadow:0 10px 30px rgba(61,42,48,.12)">
+  </div>
+</section>
+
+<!-- Our Work -->
+<section id="our-work" style="padding:96px 0 80px">
+  <div class="wrap">
+    <div style="text-align:center">
+      <div class="eyebrow">Our Work</div>
+      <h2 style="font-size:46px;margin-top:10px">Recent Celebrations</h2>
+      <p style="max-width:600px;margin:16px auto 0">Every project starts with a conversation about what the celebration should feel like. Browse by occasion, then open a project to see the full set of photographs.</p>
+    </div>
+
+    <div id="work-grid">
+      <div id="chips" style="text-align:center;margin-top:34px"></div>
+      <div id="project-grid" class="grid3" style="margin-top:44px"></div>
+      <div style="text-align:center;margin-top:40px;font-size:13px;color:#8A7568">Sample projects shown as placeholders. Replace them with your real photographs and videos later.</div>
+    </div>
+
+    <div id="work-detail" class="hidden">
+      <button type="button" id="back-btn" class="btn btn-ghost" style="margin-top:34px;padding:10px 22px;font-size:13px">← Back to all projects</button>
+      <div style="margin-top:28px">
+        <div class="eyebrow" id="detail-cat"></div>
+        <h2 id="detail-title" style="font-size:46px;margin-top:10px"></h2>
+        <p id="detail-desc" style="max-width:720px;margin-top:14px"></p>
+      </div>
+      <div id="detail-imgs" class="grid3" style="margin-top:36px;gap:18px"></div>
+      <p style="font-size:13px;color:#8A7568;margin-top:14px">Click any photograph to enlarge it.</p>
+      <div style="text-align:center;margin-top:36px"><button class="btn" type="button" data-open-form>Book a Similar Setup</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us -->
+<section id="about" style="background:#FDF3F3;padding:96px 0">
+  <div class="wrap two-col">
+    <div>
+      <img src="images/profile.jpg" alt="Aarthi, founder of Aarthi's Fantasy Decor" style="width:100%;height:560px;object-fit:cover;object-position:center top;border-radius:220px 220px 18px 18px;box-shadow:0 10px 30px rgba(61,42,48,.12)">
+    </div>
+    <div>
+      <div class="eyebrow">About Us</div>
+      <h2 style="font-size:46px;margin-top:10px">Hi, I'm Aarthi. Decorating is my passion.</h2>
+      <p style="margin-top:18px">Creating beautiful things has been part of me since childhood. I have always loved turning simple materials into something magical, whether it is a bunch of balloons, a handful of flowers or a corner that needs a little more colour. That love is exactly what Aarthi's Fantasy Decor is built on.</p>
+      <p style="margin-top:14px">I have been bringing that passion to celebrations for nearly six years now. Every event teaches me something new, and seeing people smile when they walk into a space I have decorated is the reward I value most.</p>
+      <p style="margin-top:14px"><span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:#A8456A">My style:</span> detailed, colourful and personal. I am very keen on the small things, from how balloons are layered to how a floral piece is finished, because those details are what make a celebration feel special.</p>
+      <p style="margin-top:14px"><span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:#A8456A">What makes us different:</span> I work hard to understand exactly what each client is asking for. I show you a design mock-up and visualisation first, and I only move forward once you are happy with the plan. Your satisfaction matters more to me than anything else in this business.</p>
+      <div style="display:flex;gap:16px;margin-top:30px;flex-wrap:wrap">
+        <button class="btn" type="button" data-open-form>Start Your Enquiry</button>
+        <a class="btn btn-ghost" href="#our-work">See My Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Services -->
+<section id="services" style="padding:96px 0">
+  <div class="wrap">
+    <div style="text-align:center">
+      <div class="eyebrow">Our Services</div>
+      <h2 style="font-size:46px;margin-top:10px">Decorations for Every Occasion</h2>
+      <p style="max-width:600px;margin:16px auto 0">From intimate family gatherings to shop openings, each service is designed around the people and the moment it is for.</p>
+    </div>
+    <div class="grid3" style="margin-top:48px">
+      <div class="card" style="padding-bottom:24px"><img src="images/birthday_1.jpg" alt="Birthday décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Birthday Party Decorations</h3><p style="font-size:14px;margin-top:8px">Bright, joyful balloon clusters, table styling and personal touches for every age, from first birthdays to milestone celebrations.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+      <div class="card" style="padding-bottom:24px"><img src="images/babyshower_1.jpg" alt="Baby shower décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Baby Shower Decorations</h3><p style="font-size:14px;margin-top:8px">Soft, gentle palettes in blush, ivory and sage, with bunting, pom-poms and floral accents that feel warm and welcoming.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+      <div class="card" style="padding-bottom:24px"><img src="images/anniversary_1.jpg" alt="Anniversary décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Anniversary Decorations</h3><p style="font-size:14px;margin-top:8px">Romantic hearts, rose and gold balloons and floral arrangements that celebrate the years you have shared.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+      <div class="card" style="padding-bottom:24px"><img src="images/festival_1.jpg" alt="Festival décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Diwali and Festival Decorations</h3><p style="font-size:14px;margin-top:8px">Glowing lanterns, warm lights and rich colours that bring festive spirit into your home or venue.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+      <div class="card" style="padding-bottom:24px"><img src="images/corporate_1.jpg" alt="Corporate event décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Corporate Event Decorations</h3><p style="font-size:14px;margin-top:8px">Clean, polished backdrops and stage styling that suit professional gatherings, launches and award evenings.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+      <div class="card" style="padding-bottom:24px"><img src="images/community_1.jpg" alt="Community event décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Community Party Decorations</h3><p style="font-size:14px;margin-top:8px">Cheerful garlands, bunting and table décor that bring neighbours, schools and groups together.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+      <div class="card" style="padding-bottom:24px"><img src="images/shopopening_1.jpg" alt="Shop opening décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Shop Opening Decorations</h3><p style="font-size:14px;margin-top:8px">Eye-catching entrance arches, balloon features and grand-opening styling that welcome customers in.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+      <div class="card" style="padding-bottom:24px"><img src="images/surprise_1.jpg" alt="Surprise party décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Surprise Party Decorations</h3><p style="font-size:14px;margin-top:8px">Hidden-reveal setups, gift-box styling and a balloon burst that make the big moment unforgettable.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+      <div class="card" style="padding-bottom:24px"><img src="images/floral_1.jpg" alt="Balloon and floral décor" style="width:100%;height:220px;object-fit:cover"><div style="padding:0 24px"><h3 style="font-size:24px;margin-top:20px">Balloon and Floral Decorations</h3><p style="font-size:14px;margin-top:8px">Balloons and blooms designed together, from a single centrepiece to a full feature wall.</p><div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap"><a href="#our-work" class="link-btn">Explore More</a><button type="button" class="link-btn accent" data-open-form>Book This Service</button></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section id="packages" style="background:#FDF3F3;padding:96px 0">
+  <div class="wrap">
+    <div style="text-align:center">
+      <div class="eyebrow">Packages</div>
+      <h2 style="font-size:46px;margin-top:10px">Find a Package That Fits Your Budget</h2>
+      <p style="font-size:14px;margin-top:12px">Final pricing depends on event requirements, location, design and customization. The inclusions below are sample details and will be confirmed with you.</p>
+    </div>
+    <div class="grid5" style="margin-top:44px">
+      <div class="card" style="padding:0">
+        <img src="images/table_2.jpg" alt="Package 1 reference" style="width:100%;height:150px;object-fit:cover">
+        <div style="padding:22px 20px">
+          <div style="font-size:12px;letter-spacing:.14em;color:#A8456A;text-transform:uppercase">Package 1</div>
+          <h3 style="font-size:26px;margin-top:6px">Under $300</h3>
+          <p style="font-size:13px;margin-top:6px;font-weight:400">Little Celebration</p>
+          <ul style="font-size:13px;padding-left:18px;margin:10px 0 0"><li>Balloon bunch for the table</li><li>Table accent with florals</li><li>Simple styling advice</li></ul>
+          <button class="btn btn-ghost" type="button" data-open-form style="margin-top:16px;padding:10px 18px;font-size:12px">Enquire</button>
+        </div>
+      </div>
+      <div class="card" style="padding:0">
+        <img src="images/table_1.jpg" alt="Package 2 reference" style="width:100%;height:150px;object-fit:cover">
+        <div style="padding:22px 20px">
+          <div style="font-size:12px;letter-spacing:.14em;color:#A8456A;text-transform:uppercase">Package 2</div>
+          <h3 style="font-size:26px;margin-top:6px">$300–$500</h3>
+          <p style="font-size:13px;margin-top:6px;font-weight:400">Sweet Gathering</p>
+          <ul style="font-size:13px;padding-left:18px;margin:10px 0 0"><li>Balloon garland strip</li><li>Floral table centrepiece</li><li>Welcome sign area</li></ul>
+          <button class="btn btn-ghost" type="button" data-open-form style="margin-top:16px;padding:10px 18px;font-size:12px">Enquire</button>
+        </div>
+      </div>
+      <div class="card" style="padding:0">
+        <img src="images/babyshower_2.jpg" alt="Package 3 reference" style="width:100%;height:150px;object-fit:cover">
+        <div style="padding:22px 20px">
+          <div style="font-size:12px;letter-spacing:.14em;color:#A8456A;text-transform:uppercase">Package 3</div>
+          <h3 style="font-size:26px;margin-top:6px">$500–$800</h3>
+          <p style="font-size:13px;margin-top:6px;font-weight:400">Full Party Look</p>
+          <ul style="font-size:13px;padding-left:18px;margin:10px 0 0"><li>Balloon garland and backdrop</li><li>Florals for two tables</li><li>Photo-corner styling</li></ul>
+          <button class="btn btn-ghost" type="button" data-open-form style="margin-top:16px;padding:10px 18px;font-size:12px">Enquire</button>
+        </div>
+      </div>
+      <div class="card" style="padding:0">
+        <img src="images/balloon_1.jpg" alt="Package 4 reference" style="width:100%;height:150px;object-fit:cover">
+        <div style="padding:22px 20px">
+          <div style="font-size:12px;letter-spacing:.14em;color:#A8456A;text-transform:uppercase">Package 4</div>
+          <h3 style="font-size:26px;margin-top:6px">$800–$1,500</h3>
+          <p style="font-size:13px;margin-top:6px;font-weight:400">Signature Setup</p>
+          <ul style="font-size:13px;padding-left:18px;margin:10px 0 0"><li>Balloon arch feature</li><li>Floral centrepieces</li><li>Entrance and lounge styling</li></ul>
+          <button class="btn btn-ghost" type="button" data-open-form style="margin-top:16px;padding:10px 18px;font-size:12px">Enquire</button>
+        </div>
+      </div>
+      <div class="card" style="padding:0">
+        <img src="images/special_1.jpg" alt="Package 5 reference" style="width:100%;height:150px;object-fit:cover">
+        <div style="padding:22px 20px">
+          <div style="font-size:12px;letter-spacing:.14em;color:#A8456A;text-transform:uppercase">Package 5</div>
+          <h3 style="font-size:26px;margin-top:6px">$1,500+</h3>
+          <p style="font-size:13px;margin-top:6px;font-weight:400">Grand Celebration</p>
+          <ul style="font-size:13px;padding-left:18px;margin:10px 0 0"><li>Custom stage or feature design</li><li>Multiple décor zones</li><li>Design consultation and mock-up</li></ul>
+          <button class="btn btn-ghost" type="button" data-open-form style="margin-top:16px;padding:10px 18px;font-size:12px">Enquire</button>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px"><button class="btn" type="button" data-open-form>Request a Custom Quote</button></div>
+  </div>
+</section>
+
+<!-- Grab & Go -->
+<section id="grab-go" style="padding:96px 0">
+  <div class="wrap">
+    <div style="text-align:center">
+      <div class="eyebrow">Grab &amp; Go</div>
+      <h2 style="font-size:46px;margin-top:10px">Balloon Décor, Ready When You Are</h2>
+      <p style="max-width:620px;margin:16px auto 0">For customers who want a beautiful balloon piece without booking a full event setup. Choose a ready-made style, then customize colours and sizes to suit you.</p>
+    </div>
+    <div class="grid3" style="margin-top:48px">
+      <div class="card"><img src="images/garland_1.jpg" alt="Balloon garland" style="width:100%;height:240px;object-fit:cover"><div style="padding:22px 24px"><h3 style="font-size:24px">Balloon Garlands</h3><p style="font-size:14px;margin-top:6px">A flowing line of balloons for a table, wall or doorway. Customization: colours, length, balloon sizes.</p><button class="btn btn-ghost" type="button" data-open-form style="margin-top:14px;padding:10px 20px;font-size:12px">Enquire</button></div></div>
+      <div class="card"><img src="images/balloon_2.jpg" alt="Balloon arch" style="width:100%;height:240px;object-fit:cover"><div style="padding:22px 24px"><h3 style="font-size:24px">Balloon Garland with One Arch</h3><p style="font-size:14px;margin-top:6px">A garland that rises into a single arch, a simple way to frame a photo spot or entrance. Customization: arch size and colour palette.</p><button class="btn btn-ghost" type="button" data-open-form style="margin-top:14px;padding:10px 20px;font-size:12px">Enquire</button></div></div>
+      <div class="card"><img src="images/cutout_1.jpg" alt="Balloon cutout" style="width:100%;height:240px;object-fit:cover"><div style="padding:22px 24px"><h3 style="font-size:24px">Balloon Arrangement with One Cutout</h3><p style="font-size:14px;margin-top:6px">A balloon cluster around a heart or number cutout, perfect for a birthday, anniversary or a single special word. Customization: cutout shape and colours.</p><button class="btn btn-ghost" type="button" data-open-form style="margin-top:14px;padding:10px 20px;font-size:12px">Enquire</button></div></div>
+      <div class="card"><img src="images/cutout_2.jpg" alt="Arch and cutout combination" style="width:100%;height:240px;object-fit:cover"><div style="padding:22px 24px"><h3 style="font-size:24px">Arch and Cutout Combinations</h3><p style="font-size:14px;margin-top:6px">An arch and a cutout together for a bigger statement at a party or shop opening. Customization: layout, size and balloon finish.</p><button class="btn btn-ghost" type="button" data-open-form style="margin-top:14px;padding:10px 20px;font-size:12px">Enquire</button></div></div>
+      <div class="card"><img src="images/table_2.jpg" alt="Balloon and floral table arrangement" style="width:100%;height:240px;object-fit:cover"><div style="padding:22px 24px"><h3 style="font-size:24px">Grab-and-Go Table Arrangements</h3><p style="font-size:14px;margin-top:6px">A compact balloon and floral arrangement for a dessert or gift table, ready to collect. Customization: colour and florals.</p><button class="btn btn-ghost" type="button" data-open-form style="margin-top:14px;padding:10px 20px;font-size:12px">Enquire</button></div></div>
+      <div class="card"><img src="images/garland_2.jpg" alt="Custom balloon arrangement" style="width:100%;height:240px;object-fit:cover"><div style="padding:22px 24px"><h3 style="font-size:24px">Custom Balloon Arrangements</h3><p style="font-size:14px;margin-top:6px">Tell me what you have in mind and I will design a balloon arrangement around it. Customization: anything you can describe or show me.</p><button class="btn btn-ghost" type="button" data-open-form style="margin-top:14px;padding:10px 20px;font-size:12px">Enquire</button></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials (sample) -->
+<section style="background:#FDF3F3;padding:90px 0;text-align:center">
+  <div class="wrap">
+    <div class="eyebrow">Kind Words</div>
+    <h2 style="font-size:42px;margin-top:10px">What Clients Say</h2>
+    <div class="grid3" style="margin-top:40px;text-align:left">
+      <div class="card" style="padding:28px"><p style="font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic">"The balloon arch was even better than the sketch. Every guest asked who did it."</p><p style="font-size:13px;margin-top:14px">– Priya, birthday celebration <span style="color:#8A7568">(sample)</span></p></div>
+      <div class="card" style="padding:28px"><p style="font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic">"Aarthi showed me the design before a single balloon went up. I felt completely looked after."</p><p style="font-size:13px;margin-top:14px">– Meera, baby shower <span style="color:#8A7568">(sample)</span></p></div>
+      <div class="card" style="padding:28px"><p style="font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic">"The detailing was beautiful. Our office lobby looked like a celebration, not just a stage."</p><p style="font-size:13px;margin-top:14px">– Ramesh, corporate event <span style="color:#8A7568">(sample)</span></p></div>
+    </div>
+    <p style="font-size:12px;color:#8A7568;margin-top:24px">Sample testimonials. These will be replaced with real client quotes.</p>
+  </div>
+</section>
+
+<!-- Instagram -->
+<section style="padding:90px 0 80px;text-align:center">
+  <div class="wrap">
+    <div class="eyebrow">Follow Along</div>
+    <h2 style="font-size:42px;margin-top:10px">On Instagram</h2>
+    <div class="grid4" style="margin-top:36px">
+      <a href="https://www.instagram.com/aarthisfantasydecor/" target="_blank" rel="noopener"><img src="images/anniversary_2.jpg" alt="Instagram post" style="width:100%;height:220px;object-fit:cover;border-radius:12px"></a>
+      <a href="https://www.instagram.com/aarthisfantasydecor/" target="_blank" rel="noopener"><img src="images/balloon_2.jpg" alt="Instagram post" style="width:100%;height:220px;object-fit:cover;border-radius:12px"></a>
+      <a href="https://www.instagram.com/aarthisfantasydecor/" target="_blank" rel="noopener"><img src="images/community_2.jpg" alt="Instagram post" style="width:100%;height:220px;object-fit:cover;border-radius:12px"></a>
+      <a href="https://www.instagram.com/aarthisfantasydecor/" target="_blank" rel="noopener"><img src="images/surprise_1.jpg" alt="Instagram post" style="width:100%;height:220px;object-fit:cover;border-radius:12px"></a>
+    </div>
+    <a class="btn btn-ghost" href="https://www.instagram.com/aarthisfantasydecor/" target="_blank" rel="noopener" style="margin-top:32px">Follow Us on Instagram</a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="background:#F9D0D4;padding:90px 0">
+  <div class="wrap two-col" style="align-items:start">
+    <div>
+      <div class="eyebrow" style="color:#3D2A30">Contact Us</div>
+      <h2 style="font-size:46px;margin-top:10px">Let's plan your celebration</h2>
+      <p style="margin-top:16px">Tell me about your event and I will get back to you with ideas, a mock-up and a quote.</p>
+      <div style="margin-top:26px;font-size:15px;line-height:2">
+        <div><strong style="font-weight:500">Business:</strong> Aarthi's Fantasy Decor</div>
+        <div><strong style="font-weight:500">Email:</strong> <a href="mailto:aarthisfantasydecor@gmail.com" style="text-decoration:underline">aarthisfantasydecor@gmail.com</a></div>
+        <div><strong style="font-weight:500">Phone:</strong> <a href="tel:+12172500515" style="text-decoration:underline">+1 (217) 250-0515</a></div>
+        <div><strong style="font-weight:500">WhatsApp:</strong> <a href="https://wa.me/12172500515?text=Hi%20Aarthi%2C%20I%27d%20like%20to%20enquire%20about%20decorating%20my%20event" target="_blank" rel="noopener" style="text-decoration:underline">Message me on WhatsApp</a></div>
+        <div><strong style="font-weight:500">Instagram:</strong> <a href="https://www.instagram.com/aarthisfantasydecor/" target="_blank" rel="noopener" style="text-decoration:underline">@aarthisfantasydecor</a></div>
+        <div><strong style="font-weight:500">Service area:</strong> Downingtown, PA and within a 40-mile radius</div>
+      </div>
+    </div>
+    <div class="card" style="padding:36px;text-align:center">
+      <h3 style="font-size:30px">Ready to start?</h3>
+      <p style="margin-top:12px;font-size:15px">Share your date, your location, your budget and your ideas in a quick enquiry form.</p>
+      <button class="btn" type="button" data-open-form style="margin-top:22px">Open Enquiry Form</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#3D2A30;color:#FBE3E1;padding:64px 0 36px">
+  <div class="wrap footer-grid" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600">Aarthi's Fantasy Decor</div>
+      <p style="font-size:14px;color:#F9E4E6;max-width:340px;margin-top:6px">Balloon and floral décor for every celebration, made with care and detail.</p>
+    </div>
+    <div style="font-size:14px">
+      <div class="eyebrow" style="color:#F4B6BD">Contact</div>
+      <p style="margin:12px 0 0"><a href="mailto:aarthisfantasydecor@gmail.com" style="color:#FBE3E1">aarthisfantasydecor@gmail.com</a></p>
+      <p style="margin:4px 0 0"><a href="tel:+12172500515" style="color:#FBE3E1">+1 (217) 250-0515</a></p>
+      <p style="margin:4px 0 0"><a href="https://www.instagram.com/aarthisfantasydecor/" target="_blank" rel="noopener" style="color:#FBE3E1">@aarthisfantasydecor</a></p>
+    </div>
+    <div style="font-size:14px">
+      <div class="eyebrow" style="color:#F4B6BD">Explore</div>
+      <p style="margin:12px 0 0"><a href="#our-work" style="color:#FBE3E1">Our Work</a></p>
+      <p style="margin:4px 0 0"><a href="#packages" style="color:#FBE3E1">Packages</a></p>
+      <p style="margin:4px 0 0"><a href="#grab-go" style="color:#FBE3E1">Grab &amp; Go</a></p>
+      <p style="margin:4px 0 0"><a href="#contact" style="color:#FBE3E1">Contact Us</a></p>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:44px;padding-top:20px;border-top:1px solid #6E4F58;font-size:12px;color:#F4B6BD">© Aarthi's Fantasy Decor · Serving Downingtown, PA and within a 40-mile radius</div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/12172500515?text=Hi%20Aarthi%2C%20I%27d%20like%20to%20enquire%20about%20decorating%20my%20event" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" style="position:fixed;right:24px;bottom:24px;width:60px;height:60px;border-radius:50%;background:#A8456A;color:#FBF8F3;display:flex;align-items:center;justify-content:center;font-size:12px;box-shadow:0 6px 18px rgba(61,42,48,.25);z-index:30">WhatsApp</a>
+
+<!-- Lightbox -->
+<div id="lightbox" class="overlay hidden" style="align-items:center;padding:24px" role="dialog" aria-label="Enlarged photograph">
+  <img id="lightbox-img" alt="Enlarged project photograph" style="max-width:92vw;max-height:88vh;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.35)">
+</div>
+
+<!-- Booking / enquiry form -->
+<div id="form-modal" class="overlay hidden" role="dialog" aria-modal="true" aria-label="Event enquiry form">
+  <div class="sheet">
+    <button type="button" class="x" aria-label="Close form" data-close-form>×</button>
+
+    <div id="form-success" class="hidden" style="text-align:center;padding:40px 10px">
+      <div class="eyebrow">Enquiry Received</div>
+      <h2 style="font-size:40px;margin-top:12px">Thank you for choosing Aarthi's Fantasy Decor!</h2>
+      <p style="margin-top:14px">Your enquiry has been received. We will contact you soon.</p>
+      <button class="btn" type="button" data-close-form style="margin-top:26px">Close</button>
+    </div>
+
+    <div id="form-body">
+      <div class="eyebrow">Event Enquiry</div>
+      <h2 style="font-size:40px;margin-top:10px">Tell me about your celebration</h2>
+      <p style="font-size:14px;margin-top:8px;margin-bottom:26px">Fields marked <span class="req">*</span> are required.</p>
+      <form id="enquiry-form" novalidate>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+        <h3 style="font-size:22px;margin-bottom:12px">About you</h3>
+        <div class="grid2">
+          <label class="field"><span class="lbl">Full name <span class="req">*</span></span><input name="name" required placeholder="Your full name"></label>
+          <label class="field"><span class="lbl">Phone number <span class="req">*</span></span><input name="phone" type="tel" required placeholder="(555) 123-4567" pattern="[0-9 ()+-]{7,}"></label>
+          <label class="field"><span class="lbl">Email address</span><input name="email" type="email" placeholder="you@example.com"></label>
+          <fieldset class="field">
+            <span class="lbl">Preferred contact method <span class="req">*</span></span>
+            <div><label class="opt"><input type="radio" name="contact" value="WhatsApp" required> WhatsApp</label><label class="opt"><input type="radio" name="contact" value="Instagram"> Instagram</label><label class="opt"><input type="radio" name="contact" value="Phone"> Phone</label></div>
+          </fieldset>
+        </div>
+
+        <h3 style="font-size:22px;margin:18px 0 12px">Your event</h3>
+        <div class="grid2">
+          <label class="field"><span class="lbl">Event type <span class="req">*</span></span>
+            <select name="eventType" required>
+              <option value="">Select an event type</option>
+              <option>Birthday</option><option>Baby Shower</option><option>Anniversary</option><option>Festival</option><option>Corporate Event</option><option>Community Event</option><option>Shop Opening</option><option>Other</option>
+            </select></label>
+          <label class="field"><span class="lbl">Event date <span class="req">*</span></span><input name="date" type="date" required></label>
+          <label class="field"><span class="lbl">Event location / ZIP code <span class="req">*</span></span><input name="location" required placeholder="City or ZIP code"></label>
+          <label class="field"><span class="lbl">Event theme</span><input name="theme" placeholder="e.g. Garden party, Bollywood night"></label>
+          <label class="field"><span class="lbl">Preferred colours</span><input name="colours" placeholder="e.g. blush, gold and ivory"></label>
+          <label class="field"><span class="lbl">Estimated budget <span class="req">*</span></span>
+            <select name="budget" required>
+              <option value="">Select a range</option>
+              <option>Under $300</option><option>$300–$500</option><option>$500–$800</option><option>$800–$1,500</option><option>$1,500+</option><option>Not decided yet</option>
+            </select></label>
+        </div>
+
+        <fieldset class="field" style="margin-top:4px">
+          <span class="lbl">Services interested in</span>
+          <div><label class="opt"><input type="checkbox" name="svc" value="Full Event Decoration"> Full Event Decoration</label><label class="opt"><input type="checkbox" name="svc" value="Balloon Decoration"> Balloon Decoration</label><label class="opt"><input type="checkbox" name="svc" value="Floral Decoration"> Floral Decoration</label><label class="opt"><input type="checkbox" name="svc" value="Grab &amp; Go"> Grab &amp; Go</label><label class="opt"><input type="checkbox" name="svc" value="Custom Setup"> Custom Setup</label></div>
+        </fieldset>
+
+        <label class="field"><span class="lbl">Reference images (optional)</span>
+          <input name="refs" type="file" accept="image/jpeg,image/png,image/webp" multiple id="refs-input">
+          <span style="font-size:12px;color:#8A7568">JPG, PNG or WebP, up to 5 MB each. Images are kept private and only used to answer your enquiry.</span>
+        </label>
+        <div id="previews" class="previews"></div>
+
+        <label class="field"><span class="lbl">Additional notes</span><textarea name="notes" placeholder="Describe your vision, the venue, the number of guests, or anything else you would like me to know."></textarea></label>
+
+        <label class="opt" style="align-items:flex-start;font-size:13px;margin-top:6px"><input type="checkbox" name="consent" required style="margin-top:4px"> <span>I agree that the information and reference images I submit can be used to respond to my enquiry. <span class="req">*</span></span></label>
+
+        <div id="form-error" class="err" role="alert"></div>
+
+        <div style="margin-top:24px;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+          <button class="btn" type="submit" id="submit-btn">Send My Enquiry</button>
+          <button class="btn btn-ghost" type="button" data-close-form>Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ---------- Settings ---------- */
+// Web app URL from Google Apps Script (Deploy → Manage deployments).
+var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx5o5RJ1HdE1DYW7c7vAw--wjiFa6vPvoCB0YGMJ0T_azY1iiEnUJB-7vPyXJj2R4ORtA/exec";
+
+/* ---------- Portfolio data (replace with your real projects later) ---------- */
+var PROJECTS = [
+  { cat: "Birthday", title: "Golden Birthday Balloon Celebration", short: "Gold, rose and ivory balloons with a floral centrepiece.", desc: "A joyful birthday setup with a cluster of gold and rose balloons, confetti for a playful touch and a floral centrepiece that ties the colours together. Designed to look bright in photos and easy for guests to enjoy.", imgs: ["images/birthday_1.jpg", "images/birthday_2.jpg"] },
+  { cat: "Baby Shower", title: "Soft Pastel Baby Shower", short: "Blush, mint and ivory with bunting and pom-poms.", desc: "A gentle, welcoming baby shower in blush, mint and ivory. Bunting frames the room, soft pom-poms float above the tables and a sage floral accent adds a natural finish.", imgs: ["images/babyshower_1.jpg", "images/babyshower_2.jpg"] },
+  { cat: "Anniversary", title: "Hearts and Blush Anniversary Night", short: "Hearts, rose balloons and soft florals for two.", desc: "A romantic anniversary décor built around hearts in rose and gold, with white and gold balloons overhead and blush florals along the edge of the room. Made to celebrate the years shared together.", imgs: ["images/anniversary_1.jpg", "images/anniversary_2.jpg"] },
+  { cat: "Floral", title: "Floral Centrepiece Styling", short: "Blooms and foliage styled for the dining table.", desc: "A layered floral arrangement in blush, mauve and ivory, finished with sage foliage and set in a soft ceramic vase. A simple way to bring elegance and natural colour to any table.", imgs: ["images/floral_1.jpg", "images/floral_2.jpg"] },
+  { cat: "Balloon", title: "Balloon Arch Feature", short: "A full arch in blush, rose and gold.", desc: "A layered balloon arch with a mix of blush, rose, lilac and gold balloons. Designed as a photo backdrop that frames the entrance or the celebration table.", imgs: ["images/balloon_1.jpg", "images/balloon_2.jpg"] },
+  { cat: "Festival", title: "Diwali Lantern Evening", short: "Warm lanterns, string lights and florals.", desc: "A festive setup with glowing lanterns, warm string lights and jewel-toned florals. The deep rose backdrop lets the golden glow stand out for a warm, celebratory evening.", imgs: ["images/festival_1.jpg", "images/festival_2.jpg"] },
+  { cat: "Corporate", title: "Corporate Stage Backdrop", short: "A clean backdrop with branded space and balloons.", desc: "A polished backdrop with a clear space for your company logo, flanked by balloon columns and a floral accent. Suited to launches, award nights and client dinners.", imgs: ["images/corporate_1.jpg", "images/corporate_2.jpg"] },
+  { cat: "Community", title: "Community Garden Party", short: "A balloon garland and bunting for a shared celebration.", desc: "A cheerful community event with a multicoloured balloon garland, triangular bunting and floral accents. Designed to bring a whole neighbourhood or group together.", imgs: ["images/community_1.jpg", "images/community_2.jpg"] },
+  { cat: "Shop Openings", title: "Grand Opening Arch", short: "A gold and white arch with a grand-opening banner.", desc: "A grand entrance with a gold, white and rose balloon arch and a bold banner. Built to draw attention from the street and welcome the first customers in.", imgs: ["images/shopopening_1.jpg", "images/shopopening_2.jpg"] },
+  { cat: "Surprise", title: "Surprise Reveal Décor", short: "A gift box with balloons rising for the big moment.", desc: "A surprise setup built around a gift box in rose and gold, with white, pink and gold balloons rising above it and confetti ready for the reveal.", imgs: ["images/surprise_1.jpg", "images/surprise_2.jpg"] },
+  { cat: "Special Events", title: "Special Evening Stage", short: "Draped curtains, florals and soft spotlights.", desc: "A special-occasion stage with deep rose draping, a row of blush and gold florals and balloons framing the space. Created for milestone events and celebrations with a formal touch.", imgs: ["images/special_1.jpg", "images/special_2.jpg"] }
+];
+var CATEGORIES = ["All", "Birthday", "Baby Shower", "Anniversary", "Floral", "Balloon", "Festival", "Corporate", "Community", "Shop Openings", "Surprise", "Special Events"];
+
+/* ---------- Portfolio: filter, project view and lightbox ---------- */
+var currentCat = "All";
+var chipsEl = document.getElementById("chips");
+var gridEl = document.getElementById("project-grid");
+var gridWrap = document.getElementById("work-grid");
+var detailWrap = document.getElementById("work-detail");
+
+function renderChips() {
+  chipsEl.innerHTML = "";
+  CATEGORIES.forEach(function (c) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.textContent = c;
+    b.style.background = c === currentCat ? "#F9D0D4" : "#FFFFFF";
+    b.style.color = "#3D2A30";
+    b.addEventListener("click", function () { currentCat = c; renderChips(); renderGrid(); });
+    chipsEl.appendChild(b);
+  });
+}
+
+function renderGrid() {
+  gridEl.innerHTML = "";
+  PROJECTS.forEach(function (p, i) {
+    if (currentCat !== "All" && p.cat !== currentCat) return;
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "card";
+    b.style.cssText = "padding:0;border:none;text-align:left;font:inherit";
+    b.innerHTML =
+      '<div style="height:280px"><img class="pic" src="' + p.imgs[0] + '" alt="' + p.title + '"></div>' +
+      '<div style="padding:20px 22px"><div class="eyebrow" style="font-size:11px"></div>' +
+      '<h3 style="font-size:24px;margin-top:6px"></h3><p style="margin:6px 0 0;font-size:14px"></p></div>';
+    b.querySelector(".eyebrow").textContent = p.cat;
+    b.querySelector("h3").textContent = p.title;
+    b.querySelector("p").textContent = p.short;
+    b.addEventListener("click", function () { showProject(i); });
+    gridEl.appendChild(b);
+  });
+}
+
+function showProject(i) {
+  var p = PROJECTS[i];
+  document.getElementById("detail-cat").textContent = p.cat;
+  document.getElementById("detail-title").textContent = p.title;
+  document.getElementById("detail-desc").textContent = p.desc;
+  var imgsEl = document.getElementById("detail-imgs");
+  imgsEl.innerHTML = "";
+  p.imgs.forEach(function (src) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "tile";
+    b.style.height = "320px";
+    b.innerHTML = '<img src="' + src + '" alt="' + p.title + ' photograph">';
+    b.addEventListener("click", function () { openLightbox(src); });
+    imgsEl.appendChild(b);
+  });
+  gridWrap.classList.add("hidden");
+  detailWrap.classList.remove("hidden");
+  document.getElementById("our-work").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+document.getElementById("back-btn").addEventListener("click", function () {
+  detailWrap.classList.add("hidden");
+  gridWrap.classList.remove("hidden");
+  document.getElementById("our-work").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+function openLightbox(src) {
+  document.getElementById("lightbox-img").src = src;
+  document.getElementById("lightbox").classList.remove("hidden");
+}
+document.getElementById("lightbox").addEventListener("click", function () {
+  this.classList.add("hidden");
+});
+
+/* ---------- Enquiry form ---------- */
+var modal = document.getElementById("form-modal");
+var form = document.getElementById("enquiry-form");
+var formBody = document.getElementById("form-body");
+var formSuccess = document.getElementById("form-success");
+var formError = document.getElementById("form-error");
+var submitBtn = document.getElementById("submit-btn");
+
+function openForm() {
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+function closeForm() {
+  modal.classList.add("hidden");
+  document.body.style.overflow = "";
+  // Reset the form for the next enquiry.
+  form.reset();
+  document.getElementById("previews").innerHTML = "";
+  formError.classList.remove("show");
+  formBody.classList.remove("hidden");
+  formSuccess.classList.add("hidden");
+}
+
+document.querySelectorAll("[data-open-form]").forEach(function (el) {
+  el.addEventListener("click", openForm);
+});
+document.querySelectorAll("[data-close-form]").forEach(function (el) {
+  el.addEventListener("click", closeForm);
+});
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) closeForm();
+});
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    if (!document.getElementById("lightbox").classList.contains("hidden")) {
+      document.getElementById("lightbox").classList.add("hidden");
+    } else if (!modal.classList.contains("hidden")) {
+      closeForm();
+    }
+  }
+});
+
+// Preview reference images. They are shown on this page only.
+document.getElementById("refs-input").addEventListener("change", function (e) {
+  var box = document.getElementById("previews");
+  box.innerHTML = "";
+  Array.prototype.slice.call(e.target.files || [], 0, 8).forEach(function (f) {
+    var img = document.createElement("img");
+    img.alt = "Reference image preview";
+    img.src = URL.createObjectURL(f);
+    box.appendChild(img);
+  });
+});
+
+function showSuccess() {
+  setBusy(false);
+  formBody.classList.add("hidden");
+  formSuccess.classList.remove("hidden");
+}
+function showError() {
+  setBusy(false);
+  formError.textContent = "Sorry, your enquiry could not be sent. Please check your connection and try again, or message us on WhatsApp.";
+  formError.classList.add("show");
+}
+function setBusy(on) {
+  submitBtn.disabled = on;
+  submitBtn.textContent = on ? "Sending…" : "Send My Enquiry";
+}
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  formError.classList.remove("show");
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  var fd = new FormData(form);
+  var params = new URLSearchParams({
+    name: fd.get("name") || "",
+    email: fd.get("email") || "",
+    phone: fd.get("phone") || "",
+    contact: fd.get("contact") || "",
+    eventType: fd.get("eventType") || "",
+    date: fd.get("date") || "",
+    location: fd.get("location") || "",
+    theme: fd.get("theme") || "",
+    colours: fd.get("colours") || "",
+    budget: fd.get("budget") || "",
+    services: fd.getAll("svc").join(", "),
+    notes: fd.get("notes") || "",
+    consent: fd.get("consent") ? "Yes" : "No",
+    website: fd.get("website") || ""
+  });
+
+  var url = SCRIPT_URL + "?" + params.toString();
+  setBusy(true);
+
+  fetch(url, { method: "GET", mode: "no-cors" })
+    .then(function () { showSuccess(); })
+    .catch(function () { showError(); });
+});
+
+/* ---------- Start ---------- */
+renderChips();
+renderGrid();
+</script>
+</body>
+</html>
