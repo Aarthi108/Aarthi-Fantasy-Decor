@@ -397,7 +397,12 @@ img{display:block}
               <option>Birthday</option><option>Baby Shower</option><option>Anniversary</option><option>Festival</option><option>Corporate Event</option><option>Community Event</option><option>Shop Opening</option><option>Other</option>
             </select></label>
           <label class="field"><span class="lbl">Event date <span class="req">*</span></span><input name="date" type="date" required></label>
-          <label class="field"><span class="lbl">Event location / ZIP code <span class="req">*</span></span><input name="location" required placeholder="City or ZIP code"></label>
+          <fieldset class="field" style="grid-column:1 / -1;border:1px solid #F4B6BD;border-radius:14px;padding:16px 18px;margin:6px 0">
+            <span class="lbl">Event place <span class="req">*</span></span>
+            <div style="margin:8px 0 16px"><label class="opt"><input type="radio" name="setting" value="Indoor" required> Indoor</label><label class="opt"><input type="radio" name="setting" value="Outdoor"> Outdoor</label></div>
+            <label class="field" style="margin-bottom:14px"><span class="lbl">Venue name and address <span class="req">*</span></span><input name="address" required placeholder="e.g. 12 Main Street, or Sunrise Restaurant, 45 Oak Avenue"></label>
+            <label class="field" style="margin-bottom:0"><span class="lbl">ZIP code of the venue <span class="req">*</span></span><input name="zip" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="5-digit ZIP, e.g. 19335"></label>
+          </fieldset>
           <label class="field"><span class="lbl">Event theme</span><input name="theme" placeholder="e.g. Garden party, Bollywood night"></label>
           <label class="field"><span class="lbl">Preferred colours</span><input name="colours" placeholder="e.g. blush, gold and ivory"></label>
           <label class="field"><span class="lbl">Estimated budget <span class="req">*</span></span>
@@ -616,7 +621,9 @@ form.addEventListener("submit", function (e) {
     contact: fd.get("contact") || "",
     eventType: fd.get("eventType") || "",
     date: fd.get("date") || "",
-    location: fd.get("location") || "",
+    eventSetting: fd.get("setting") || "",
+    eventAddress: fd.get("address") || "",
+    eventZip: fd.get("zip") || "",
     theme: fd.get("theme") || "",
     colours: fd.get("colours") || "",
     budget: fd.get("budget") || "",
