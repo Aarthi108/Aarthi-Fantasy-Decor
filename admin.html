@@ -489,6 +489,12 @@ function buildGroup(title, items) {
   return g;
 }
 
+// Shows the event place: indoor/outdoor, address and ZIP. Older enquiries show their old location text.
+function eventPlaceFor(item) {
+  var parts = [item.eventSetting, item.eventAddress, item.eventZip ? "ZIP " + item.eventZip : ""].filter(function (p) { return p; });
+  return parts.length ? parts.join(" · ") : (item.location || "—");
+}
+
 function metaLine(label, value) {
   var p = el("div", "meta");
   p.appendChild(el("b", "", label + ": "));
@@ -509,7 +515,7 @@ function buildCard(item) {
   c.appendChild(metaLine("Submitted", fmtDateTime(item.timestamp)));
   c.appendChild(metaLine("Phone", item.phone));
   c.appendChild(metaLine("Budget", item.budget));
-  c.appendChild(metaLine("Location", item.location));
+  c.appendChild(metaLine("Event place", eventPlaceFor(item)));
 
   var actions = el("div", "card-actions");
 
@@ -678,7 +684,10 @@ function openDetail(item) {
     ["Preferred contact", item.contact],
     ["Event type", item.eventType],
     ["Event date", fmtEventDate(item.date)],
-    ["Location / ZIP", item.location],
+    ["Indoor or outdoor", item.eventSetting],
+    ["Event address", item.eventAddress],
+    ["ZIP code", item.eventZip],
+    ["Location / ZIP (older enquiry)", item.location],
     ["Theme", item.theme],
     ["Preferred colours", item.colours],
     ["Budget", item.budget],
